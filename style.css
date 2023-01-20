@@ -1,0 +1,133 @@
+/* (A) WHOLE PAGE */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+ }
+ header{
+    background-color:  #f0f0f0; 
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+ } 
+  .logo{
+    text-decoration: none;
+     font-weight:700 ;
+     color:#3a6cf4 ;
+     text-transform: uppercase;
+     font-size: 1.8em;
+  }
+  section{
+    padding: 100px 200px;
+ }
+ .logout{
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logout:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+.logout:active {
+  box-shadow: none;
+  top: 5px;
+}
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+/* (B) SELECT APPOINTMENT DATE/SLOT */
+#select {
+  width: 100%;
+  border-collapse: collapse;
+}
+#select th, #select td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #d7d7d7;
+}
+#select th {
+  font-weight: 700;
+  color: #fff;
+  background: red;
+}
+#select td { background: #fff; }
+#select td.booked {
+  color: #b1b1b1;
+  background: #f3f3f3;
+}
+#select td.selected { background: #feffaa; }
+
+/* (C) CONFIRMATION FORM */
+#confirm { display: flex; }
+#confirm input[type=text] {
+  padding: 10px;
+  margin-right: 10px;
+}
+#confirm input[type=submit] {
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  background: yellowgreen;
+  cursor: pointer;
+}
+#confirm input[type=submit]:disabled { background: #9d9d9d; }
+@media (max-width:1023px) {
+  header {
+      padding: 12px 20px;
+  }
+  .navigation a {
+      padding : 10px ;
+  }
+  .title {
+      font-size: 1.8em;
+  }
+  section {
+      padding: 80px 20px ;
+  }
+}
